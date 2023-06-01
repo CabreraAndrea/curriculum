@@ -15,10 +15,16 @@ body {
     margin: 0 auto;
     position: relative;
     }
-
-#menu-icon {
+/*estilo navegador*/
+.menu-icon {
     display: none;
     font-size: 50px;
+}
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index:2000 ;
+    padding: 10px;
 }
 ul {
     list-style: none;
@@ -230,3 +236,77 @@ h3 {
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
+@media screen and (min-width:320px) and (max-width:580px) {
+
+.menu-icon {
+     display: block;
+    color: lightslategray;
+    border: 1px solid lightslategray  ;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.menu{
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background:rgb(211, 211, 211, 0.8) ;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+nav ul li {
+    position: relative;
+    font-size: 120%;
+    display: block;
+    
+}
+.menu__link {
+    display: block;
+    padding: 10px;
+
+}
+.menu__link--select {
+    background-color: lightslategray ;
+    
+}
+.menu__link:hover {
+ background-color:lightgray;
+}
+.mostrar {
+    height:296px ;
+}
+.header-content {
+    margin-top: 0px;
+    position: relative;
+ }
+
+
+ .banner-content {
+    width: 90%;
+    color: rgb(222, 223, 185);
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1em;
+    
+}
+}
+/*@media screen and (min-width:1200px){
+    #menu-icon {
+        display: none;
+    }
+}*/
